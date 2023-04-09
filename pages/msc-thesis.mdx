@@ -1,0 +1,17 @@
+---
+type: page
+title: MSc Thesis
+---
+
+# MSc Thesis
+
+In August 2007 I became a Master of Science in the field of Artificial Intelligence by writing my [master thesis](/thesis.pdf).
+
+My thesis describes an unsupervised technique to expand semantic lexicons using Information Extraction. The technique consists of a bootstrapping algorithm that iteratively finds a small expansion to the semantic lexicon. In each iteration the algorithm:
+
+- Finds all occurrences of the semantic lexicon in the unannotated corpus
+- Finds a set of extraction patterns able to extract these occurrences from the corpus
+- Finds the set of extractions made by the set of extraction patterns
+- Ranks the set of extractions (by scoring the extractions and the extraction patterns) and adds the highest scored extractions to the semantic lexicon.
+
+I applied this technique on a corpus of about 40.000 movie reviews taken from rec.arts.movies.reviews and semantic lexicons consisting of movie titles, actors and certifications (e.g. R, PG-13).
